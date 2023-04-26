@@ -10,9 +10,7 @@ def string_sort(array):
     for element in array[1:]:
         if element < pivot:
             left += element
-
-    for element in array[1:]:
-        if element >= pivot:
+        elif element >= pivot:
             right += element
 
     return string_sort(left) + pivot + string_sort(right)
